@@ -15,7 +15,6 @@ function layout() {
           <Form />
         </body>
       </GoogleOAuthProvider>
-      ;
     </html>
   );
 }
