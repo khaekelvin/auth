@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import imageUrl from "../Form/Images/google-lens-icon-logo-symbol-free-png.webp";
 import { GoogleLogin } from "@react-oauth/google";
+import { jwtDecode } from "jwt-decode";
 
 function page() {
   return (
@@ -9,6 +9,9 @@ function page() {
       <div className="flex items-center justify-center h-screen">
         <GoogleLogin
           onSuccess={(credentialResponse) => {
+            const deccredentialResponseoded = jwtDecode(
+              credentialResponse?.credential ?? ""
+            );
             console.log(credentialResponse);
           }}
           onError={() => {
