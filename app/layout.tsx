@@ -11,7 +11,7 @@ function layout() {
   return (
     <html lang="en">
       <GoogleOAuthProvider clientId="557645189380-eo8bkt6blv7lt5r0a1lddvd1mk3fl57c.apps.googleusercontent.com">
-        <body className="text-black bg-white">
+        <body className="text-black bg-dark">
           <Form />
         </body>
       </GoogleOAuthProvider>
