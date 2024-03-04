@@ -24,18 +24,3 @@ function page() {
 }
 
 export default page;
-
-{
-  /* <div className="flex items-center justify-center h-screen">
-<div>
-  <GoogleLogin
-    onSuccess={(credentialResponse) => {
-      console.log(credentialResponse);
-    }}
-    onError={() => {
-      console.log("Login Failed");
-    }}
-  />
-</div>
-</div> */
-}
